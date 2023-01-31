@@ -7,7 +7,7 @@ EXPOSE 80
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["CoreGCP.csproj", "CoreGCP/"]
-RUN dotnet restore "CoreGCP.csproj"
+RUN dotnet restore "CoreGCP/CoreGCP.csproj"
 COPY . .
 WORKDIR "/src/CoreGCP"
 RUN dotnet build "CoreGCP.csproj" -c Release -o /app/build
