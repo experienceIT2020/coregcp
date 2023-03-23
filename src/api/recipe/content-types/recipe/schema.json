@@ -2,13 +2,14 @@
   "kind": "collectionType",
   "collectionName": "recipes",
   "info": {
-    "name": "Recipes"
+    "singularName": "recipe",
+    "pluralName": "recipes",
+    "displayName": "Recipe"
   },
   "options": {
-    "increments": true,
-    "timestamps": true,
     "draftAndPublish": true
   },
+  "pluginOptions": {},
   "attributes": {
     "Name": {
       "type": "string"
